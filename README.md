@@ -9,7 +9,7 @@ Now an algorithm of the MonkeyType class takes care of analyzing the input after
 ![example](https://raw.githubusercontent.com/gxstxxv/MonkeyType/main/pictures/Bildschirmfoto%202024-05-10%20um%2013.13.23.png)
 
 Input errors are output as shown in the following example.
-![example](https://raw.githubusercontent.com/gxstxxv/MonkeyType/main/pictures/Bildschirmfoto%202024-05-10%20um%2013.13.53.png)
+![example](https://raw.githubusercontent.com/gxstxxv/MonkeyType/main/pictures/Bildschirmfoto%202024-05-10%20um%2013.13.53.jpeg)
 
 By using the ansi_cursor_reset code (“\033[H”), no line breaks are necessary for the output.
 ![example](https://raw.githubusercontent.com/gxstxxv/MonkeyType/main/pictures/Bildschirmfoto%202024-05-10%20um%2013.15.05.png)
