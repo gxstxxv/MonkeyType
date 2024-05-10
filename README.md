@@ -1,5 +1,5 @@
 # MonkeyType
-A relatively complex typing test with a simple TUI, which is inspired by MonkeyType.com. It is written in Java and is based on OOP. 
+A relatively complex typing test with a simple TUI, which is inspired by ![monkeytype.com](monkeytype.com). It is written in Java and is based on OOP. 
 
 After calling the InputHandler class, which takes care of KeyEvents, the RandomSentence class is called. 
 This class creates a 7 to 15 word sentence which is displayed in the terminal. 
