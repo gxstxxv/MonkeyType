@@ -6,7 +6,7 @@ public class MonkeyType {
     private ArrayList<Character> word = new ArrayList<>();
     private ArrayList<ArrayList<Character>> sentence;
 
-    public static void main(String[] args) {
+    public static void main(String[/* (╯°□°)╯︵ ┻━┻ */] args) {
         new MonkeyType();
     }
 
