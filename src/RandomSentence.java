@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class RandomSentence {
 
-		private final static int language_index = 1;
+		private final static int language_index = 0;
 		private final static String[][] languages = {
 				{"german","201"},
 				{"english","999"},
@@ -40,7 +40,7 @@ public class RandomSentence {
         while (word.length() <= 1) {
 
             try {
-                word = Files.readAllLines(Paths.get(languages[language_index][0] + ".txt"))
+                word = Files.readAllLines(Paths.get("./languages/" + languages[language_index][0] + ".txt"))
                         .get((int) (Math.random() * (Integer.parseInt(languages[language_index][1]))));
             } catch (IOException e) {
                 System.out.println(e.getMessage());
