@@ -7,7 +7,7 @@ public class RandomSentence {
 
 		private final static int language_index = 0;
 		private final static String[][] languages = {
-				{"german","201"},
+				{"german","202"},
 				{"english","999"},
 		};
 
