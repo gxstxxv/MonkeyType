@@ -7,13 +7,14 @@ public class MonkeyType {
     private ArrayList<ArrayList<Character>> sentence;
 
     public static void main(String[/* (╯°□°)╯︵ ┻━┻ */] args) {
-        new MonkeyType();
+			new MonkeyType();
     }
 
     public MonkeyType() {
 
         InputHandler inputHandler = new InputHandler(this);
         inputHandler.build_input_field();
+
         create_new_sentence();
         print_line();
 
@@ -21,7 +22,7 @@ public class MonkeyType {
 
     public void create_new_sentence() {
 
-        this.sentence = RandomSentence.create_sentence();
+        this.sentence = SentenceCreator.create_sentence();
         word.clear();
         words.clear();
         System.out.print(AnsiCodes.ANSI_TERMINAL_RESET);

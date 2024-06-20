@@ -1,16 +1,16 @@
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-public class RandomSentence {
+public class SentenceCreator {
 
-		private final static int language_index = 0;
+		private static final int LANGUAGE_INDEX = 0;
 		private final static String[][] languages = {
 				{"german","202"},
 				{"english","999"},
 		};
+
 
     public static ArrayList<ArrayList<Character>> create_sentence(){
 
@@ -41,8 +41,8 @@ public class RandomSentence {
         while (word.length() <= 1) {
 
             try {
-                word = Files.readAllLines(Paths.get("./languages/" + languages[language_index][0] + ".txt"))
-                        .get((int) (Math.random() * (Integer.parseInt(languages[language_index][1]))));
+                word = Files.readAllLines(Paths.get("./languages/" + languages[LANGUAGE_INDEX][0] + ".txt"))
+                        .get((int) (Math.random() * (Integer.parseInt(languages[LANGUAGE_INDEX][1]))));
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }

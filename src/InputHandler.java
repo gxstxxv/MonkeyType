@@ -32,7 +32,7 @@ public class InputHandler implements KeyListener, WindowFocusListener {
         int key = e.getKeyCode();
         char key_char = e.getKeyChar();
 
-        if (key >= KeyEvent.VK_A && key <= KeyEvent.VK_Z || key_char == 'ä' || key_char == 'ü' || key_char == 'ö') {
+        if (key >= KeyEvent.VK_A && key <= KeyEvent.VK_Z || key_char == 'ä' || key_char == 'ü' || key_char == 'ö' || key_char == 'ß') {
             monkeyType.handle_char_input(key_char);
         } else if (key == KeyEvent.VK_TAB || key == KeyEvent.VK_SPACE) {
             monkeyType.handle_char_input(' ');
